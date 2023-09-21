@@ -1,4 +1,5 @@
 import 'package:bookly_app/constants.dart';
+import 'package:bookly_app/features/home/presentation/views/home_view.dart';
 import 'package:bookly_app/features/splash/splash_view.dart';
 import 'package:flutter/material.dart';
 
@@ -12,8 +13,13 @@ class BooklyApp extends StatelessWidget{
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData.dark().copyWith(backgroundColor: kPrimaryColor),
-      home:SplashView() ,
-    );
-  }
+      home:const SplashView() ,
+      routes: {
+        HomeView.routeName:(_)=>HomeView()
+    }
+
+
+    );}
+
 
 }
