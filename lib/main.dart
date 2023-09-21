@@ -4,10 +4,12 @@ import 'package:bookly_app/features/splash/splash_view.dart';
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp( BooklyApp());
+  runApp(const BooklyApp());
 }
 
 class BooklyApp extends StatelessWidget{
+  const BooklyApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -15,7 +17,7 @@ class BooklyApp extends StatelessWidget{
       theme: ThemeData.dark().copyWith(backgroundColor: kPrimaryColor),
       home:const SplashView() ,
       routes: {
-        HomeView.routeName:(_)=>HomeView()
+        HomeView.routeName:(_)=>const HomeView()
     }
 
 

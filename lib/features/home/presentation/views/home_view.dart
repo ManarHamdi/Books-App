@@ -3,9 +3,11 @@ import 'package:flutter/material.dart';
 
 class HomeView extends StatelessWidget{
   static const String routeName="Home view";
+
+  const HomeView({super.key});
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return const Scaffold(
       body: HomeBody(),
     );
   }
