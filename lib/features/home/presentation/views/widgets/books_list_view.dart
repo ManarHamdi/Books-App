@@ -7,16 +7,13 @@ class BooksListView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.only(left: 15.0),
-      child: SizedBox(
-        height: 210,
-        child: ListView.separated(
-            scrollDirection: Axis.horizontal,
-            itemBuilder: (context, index) => const BooksListViewItem(),
-            separatorBuilder: ((context, index) => const SizedBox(width: 5,)),
-            itemCount: 10),
-      ),
+    return SizedBox(
+      height: 210,
+      child: ListView.separated(
+          scrollDirection: Axis.horizontal,
+          itemBuilder: (context, index) => const BooksListViewItem(),
+          separatorBuilder: ((context, index) => const SizedBox(width: 5,)),
+          itemCount: 10),
     );
   }
 }

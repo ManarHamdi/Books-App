@@ -12,7 +12,8 @@ class BooksListViewItem extends StatelessWidget {
       child:
       AspectRatio(
           aspectRatio: 2/3,
-          child: Image.asset(AssetsData.testImage)),
+
+          child: Image.asset(AssetsData.testImage,fit: BoxFit.cover,)),
     );
   }
 }
