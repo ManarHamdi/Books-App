@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-
 import '../../../../../core/utils/assets_data.dart';
 import '../../../../../core/utils/styles.dart';
+import 'book_rating_row.dart';
 
 class BestSellerListViewItem extends StatelessWidget {
   const BestSellerListViewItem({Key? key}) : super(key: key);
@@ -26,16 +26,14 @@ class BestSellerListViewItem extends StatelessWidget {
                   style: Styles.textStyle20,maxLines: 2,overflow: TextOverflow.ellipsis,)),
             const Text("J.K. Rowling",style: Styles.textStyle14,textAlign: TextAlign.start,),
             const SizedBox(height: 8,),
-            Row(
-              children: const [
-                Text("19.99 €",style: Styles.textStyle15,),
-                SizedBox(width: 39,),
-                Styles.starIcon,
-                Text("4.8",style: Styles.textStyle16,),
-                SizedBox(width: 6,),
-                Text("(2390)",style: Styles.textStyle14,)
-              ],
-            )
+
+            Row(children: const [
+              Text("19.99 €",style: Styles.textStyle15,),
+              SizedBox(width: 39,),
+              BookRatingRow()
+
+
+            ],)
           ],)
       ],
     );

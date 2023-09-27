@@ -1,8 +1,10 @@
 import 'package:bookly_app/constants.dart';
 import 'package:bookly_app/core/utils/assets_data.dart';
+import 'package:bookly_app/core/utils/routes.dart';
 import 'package:bookly_app/features/home/presentation/views/home_view.dart';
 import 'package:bookly_app/features/splash/widgets/sliding_text.dart';
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 
 class SplashViewBody extends StatefulWidget{
   const SplashViewBody({super.key});
@@ -21,7 +23,8 @@ class _SplashViewBodyState extends State<SplashViewBody> with SingleTickerProvid
     super.initState();
     initSlididingAnimation();
     Future.delayed(kTransitionDuration,(){
-     Navigator.pushReplacementNamed(context, HomeView.routeName);
+     // Navigator.pushReplacementNamed(context, AppRoutes.kHome);
+      GoRouter.of(context).pushReplacement(AppRoutes.kHome);
     });
   }
 

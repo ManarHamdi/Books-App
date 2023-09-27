@@ -1,6 +1,5 @@
 import 'package:bookly_app/constants.dart';
-import 'package:bookly_app/features/home/presentation/views/home_view.dart';
-import 'package:bookly_app/features/splash/splash_view.dart';
+import 'package:bookly_app/core/utils/routes.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -12,13 +11,11 @@ class BooklyApp extends StatelessWidget{
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return MaterialApp.router(
+      routerConfig: AppRoutes.router,
       debugShowCheckedModeBanner: false,
       theme: ThemeData.dark().copyWith(backgroundColor: kPrimaryColor),
-      home:const SplashView() ,
-      routes: {
-        HomeView.routeName:(_)=>const HomeView()
-    }
+
 
 
     );}
