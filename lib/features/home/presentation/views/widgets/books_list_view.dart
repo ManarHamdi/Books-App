@@ -7,7 +7,8 @@ class BooksListView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SizedBox(
+    return
+      SizedBox(
       height: 210,
       child: ListView.separated(
           scrollDirection: Axis.horizontal,
