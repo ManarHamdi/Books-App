@@ -1,10 +1,10 @@
 import 'package:bookly_app/core/utils/styles.dart';
+import 'package:bookly_app/features/home/presentation/views/widgets/relative_books_list_view.dart';
 import 'package:flutter/material.dart';
 import 'book_rating_row.dart';
 import 'books_list_view_item.dart';
 import 'custom_book_details_app_bar.dart';
 import 'custom_button.dart';
-
 class BookDetailsBody extends StatelessWidget {
   const BookDetailsBody({Key? key}) : super(key: key);
   @override
@@ -47,33 +47,18 @@ class BookDetailsBody extends StatelessWidget {
                 const SizedBox(height: 50,),
               ],
             ),
-            SizedBox(height: 50,),
-            Align(
+            const SizedBox(height: 50,),
+            const Align(
                 alignment: Alignment.centerLeft,
-                child: const Text("You can also", style: Styles.textStyle14)),
-            SizedBox(height: 10,),
-            relativeBooksListView()
+                child: Text("You can also", style: Styles.textStyle14)),
+            const SizedBox(height: 10,),
+            const RelativeBooksListView()
             
           ],
 
         ),
       ),
     );
-  }
-}
-class relativeBooksListView extends StatelessWidget {
-  const relativeBooksListView({Key? key}) : super(key: key);
-  @override
-  Widget build(BuildContext context) {
-    return       SizedBox(
-      height: 124,
-      child: ListView.separated(
-          scrollDirection: Axis.horizontal,
-          itemBuilder: (context, index) => const BooksListViewItem(),
-          separatorBuilder: ((context, index) => const SizedBox(width: 5,)),
-          itemCount: 10),
-    );
-
   }
 }
 
