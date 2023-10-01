@@ -1,9 +1,9 @@
 import 'package:bookly_app/core/utils/styles.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'book_rating_row.dart';
 import 'books_list_view_item.dart';
 import 'custom_book_details_app_bar.dart';
+import 'custom_button.dart';
 
 class BookDetailsBody extends StatelessWidget {
   const BookDetailsBody({Key? key}) : super(key: key);
@@ -25,13 +25,32 @@ class BookDetailsBody extends StatelessWidget {
               opacity: .5,
               child: Text("Rudyard Kipling",style: Styles.textStyle18.copyWith(fontStyle: FontStyle.italic),)),
           const SizedBox(height: 17,),
-          const BookRatingRow()
-
-
-
+          const BookRatingRow(),
+          const SizedBox(height: 37,),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              SizedBox(
+                height: 48,
+                width: MediaQuery.of(context).size.width*.4,
+                child: CustomButton(
+                backGround: Colors.white,buttonTitle: "19.99€",
+                  textColor: Colors.black,borderStyle: MaterialStateProperty.all(const RoundedRectangleBorder(borderRadius: BorderRadius.only(topLeft: Radius.circular(8),bottomLeft: Radius.circular(8)))),),
+              ),
+              SizedBox(
+                height: 48,
+                width: MediaQuery.of(context).size.width*.4,
+                child: CustomButton(backGround: const Color(0xffEF8262),buttonTitle: "Free preview",
+                  textColor: Colors.white,borderStyle: MaterialStateProperty.all(const RoundedRectangleBorder(borderRadius: BorderRadius.only(topRight: Radius.circular(8),bottomRight: Radius.circular(8)))),),
+              ),
+              const SizedBox(height: 50,),
+            ],
+          ),
+          const Text("You can also", style: Styles.textStyle14),
         ],
 
       ),
     );
   }
 }
+
