@@ -1,7 +1,6 @@
 import 'package:bookly_app/constants.dart';
 import 'package:bookly_app/core/utils/assets_data.dart';
 import 'package:bookly_app/core/utils/routes.dart';
-import 'package:bookly_app/features/home/presentation/views/home_view.dart';
 import 'package:bookly_app/features/splash/widgets/sliding_text.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
@@ -19,7 +18,6 @@ class _SplashViewBodyState extends State<SplashViewBody> with SingleTickerProvid
 
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
     initSlididingAnimation();
     Future.delayed(kTransitionDuration,(){
@@ -28,16 +26,10 @@ class _SplashViewBodyState extends State<SplashViewBody> with SingleTickerProvid
     });
   }
 
-  void initSlididingAnimation() {
-     animationController=AnimationController(vsync: this,duration: const Duration(seconds: 1));
-    animation=Tween<Offset>(begin:const Offset(0,10) ,end:const Offset(0,0) ).animate(animationController);
-    animationController.forward();
 
-  }
 
   @override
   void dispose() {
-    // TODO: implement dispose
     super.dispose();
     animationController.dispose();
   }
@@ -52,6 +44,12 @@ class _SplashViewBodyState extends State<SplashViewBody> with SingleTickerProvid
         slidingText(animation: animation)
       ],
     );
+  }
+  void initSlididingAnimation() {
+    animationController=AnimationController(vsync: this,duration: const Duration(seconds: 1));
+    animation=Tween<Offset>(begin:const Offset(0,10) ,end:const Offset(0,0) ).animate(animationController);
+    animationController.forward();
+
   }
 }
 
