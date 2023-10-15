@@ -1,41 +1,52 @@
+import 'package:bookly_app/features/home/data/models/BooksModel.dart';
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
-import '../../../../../core/utils/assets_data.dart';
 import '../../../../../core/utils/styles.dart';
 import 'book_rating_row.dart';
 
 class BestSellerListViewItem extends StatelessWidget {
-  const BestSellerListViewItem({Key? key}) : super(key: key);
-
+  const BestSellerListViewItem({Key? key, required this.booksModel}) : super(key: key);
+final BooksModel booksModel;
   @override
   Widget build(BuildContext context) {
-    return Row(
-      children: [
-        SizedBox(height: 114,
-          child: AspectRatio(
-              aspectRatio: 2/3,
-              child: Image.asset(AssetsData.testImage,fit: BoxFit.fill,)),
-        ),
-        const SizedBox(width: 29,),
-        Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            const SizedBox(
-                height: 48,
-                width: 195,
-                child: Text("Harry Potter and the Goblet of Fire",
-                  style: Styles.textStyle20,maxLines: 2,overflow: TextOverflow.ellipsis,)),
-            const Text("J.K. Rowling",style: Styles.textStyle14,textAlign: TextAlign.start,),
-            const SizedBox(height: 8,),
-
-            Row(children: const [
-              Text("19.99 €",style: Styles.textStyle15,),
-              SizedBox(width: 39,),
-              BookRatingRow()
+    return SizedBox(
+      height: 125,
+      child: Row(
+        children: [
 
 
+          ClipRRect(
+            borderRadius: const BorderRadius.all(Radius.circular(10)),
+            child: AspectRatio(
+                aspectRatio: 2/3,
+                child: CachedNetworkImage(
+                  imageUrl: booksModel.volumeInfo!.imageLinks!.thumbnail??"",
+                  fit: BoxFit.fill,
+                )),
+          ),
+          const SizedBox(width: 29,),
+          Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+               SizedBox(
+                  height: 48,
+                  width: 195,
+                  child: Text(booksModel.volumeInfo!.title??"",
+
+                    style: Styles.textStyle20,maxLines: 2,overflow: TextOverflow.ellipsis,)),
+               Text(booksModel.volumeInfo!.authors?[0]??"",style: Styles.textStyle14,textAlign: TextAlign.start,),
+              const SizedBox(height: 8,),
+
+              Row(children: const [
+                Text("Free",style: Styles.textStyle15,),
+                SizedBox(width: 39,),
+                BookRatingRow()
+
+
+              ],)
             ],)
-          ],)
-      ],
+        ],
+      ),
     );
   }
 }
