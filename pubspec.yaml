@@ -38,6 +38,8 @@ dependencies:
   go_router: ^11.1.1
   dartz: ^0.10.1
   dio: ^5.3.3
+  flutter_bloc: ^8.1.3
+
 
 
 
