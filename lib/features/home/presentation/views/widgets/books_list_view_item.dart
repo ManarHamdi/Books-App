@@ -1,4 +1,5 @@
 
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 
 
@@ -10,13 +11,13 @@ class BooksListViewItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return ClipRRect(
       borderRadius: const BorderRadius.all(Radius.circular(10)),
-      child: SizedBox(height:210 ,
-        
-        child:
-        AspectRatio(
-            aspectRatio: 2/3,
-            child: Image.network(imageUrl,
-              fit: BoxFit.fill,)),
+      child: AspectRatio(
+          aspectRatio: 2/3,
+      child:CachedNetworkImage(
+        fit: BoxFit.fill,
+        imageUrl: imageUrl,
+
+      )
       ),
     );
   }
