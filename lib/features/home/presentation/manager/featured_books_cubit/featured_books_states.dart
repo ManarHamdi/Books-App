@@ -1,4 +1,5 @@
-import '../../../data/models/BooksModel.dart';
+
+import '../../../data/models/BookModelll.dart';
 
 abstract class FeaturedBooksStates {}
 class FeaturedBooksInitialState extends FeaturedBooksStates{}
@@ -9,6 +10,6 @@ class FeaturedBooksFailureState extends FeaturedBooksStates{
 
 }
 class FeaturedBooksSuccessState extends FeaturedBooksStates{
-   final List<BooksModel> books;
+   final List<BookModelll> books;
   FeaturedBooksSuccessState(this.books);
 }

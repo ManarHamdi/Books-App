@@ -1,25 +1,27 @@
 import 'dart:convert';
 /// kind : "books#volume"
-/// id : "9GwrmHRl490C"
-/// etag : "sPRwLP9KWVI"
-/// selfLink : "https://www.googleapis.com/books/v1/volumes/9GwrmHRl490C"
-/// volumeInfo : {"title":"Beginning XNA 3.0 Game Programming","subtitle":"From Novice to Professional","authors":["Bruno Evangelista","Alexandre Santos Lobao","Riemer Grootjans","Jose ANTONIO LEAL DEFARIAS"],"publisher":"Apress","publishedDate":"2009-05-31","description":"Would you like to create your own games, but never have the time to dig into the details of multimedia programming? Now you don't have to! XNA 3.0 makes it simple to create your own games, which will run on your PC and Xbox 360 console. Even if you don't know how to program at all, Beginning XNA 3.0 Game Programming: From Novice to Professional will teach you the basics of C# 2008 programming along the way. Don't get overwhelmed with details you don't need to know—just learn what you need to start creating your own games right now! This fast–paced introduction to XNA 3.0 and the C# language provides you with a quick–start guide to creating high–quality XNA games. You'll be introduced to the key concepts and ideas you need to know in a gradual fashion so that you master one concept before using it as a foundation for the next. Before long, you will have the skills to create smooth, professional–looking results in a range of gaming genres. By the end of the book, you will have constructed several working games and have an excellent knowledge base from which to investigate more advanced techniques.","industryIdentifiers":[{"type":"ISBN_13","identifier":"9781430218180"},{"type":"ISBN_10","identifier":"1430218185"}],"readingModes":{"text":true,"image":true},"pageCount":437,"printType":"BOOK","categories":["Computers"],"maturityRating":"NOT_MATURE","allowAnonLogging":false,"contentVersion":"2.4.3.0.preview.3","panelizationSummary":{"containsEpubBubbles":false,"containsImageBubbles":false},"imageLinks":{"smallThumbnail":"http://books.google.com/books/content?id=9GwrmHRl490C&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api","thumbnail":"http://books.google.com/books/content?id=9GwrmHRl490C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"},"language":"en","previewLink":"http://books.google.com/books?id=9GwrmHRl490C&printsec=frontcover&dq=subject:Programming&hl=&cd=1&source=gbs_api","infoLink":"http://books.google.com/books?id=9GwrmHRl490C&dq=subject:Programming&hl=&source=gbs_api","canonicalVolumeLink":"https://books.google.com/books/about/Beginning_XNA_3_0_Game_Programming.html?hl=&id=9GwrmHRl490C"}
+/// id : "yfGoDwAAQBAJ"
+/// etag : "sPhcwLnAMJM"
+/// selfLink : "https://www.googleapis.com/books/v1/volumes/yfGoDwAAQBAJ"
+/// volumeInfo : {"title":"Everything You Need to Ace Computer Science and Coding in One Big Fat Notebook","subtitle":"The Complete Middle School Study Guide (Big Fat Notebooks)","authors":["Workman Publishing"],"publisher":"Workman Publishing Company","publishedDate":"2020-04-14","description":"From the editors of Brain Quest, America’s #1 educational bestseller! This Big Fat Notebook makes it all “sink in” with key concepts, mnemonic devices, definitions, diagrams, and doodles to help you understand computer science. Including: Computing systems Binary code Algorithms Computational thinking Loops, events, and procedures Programming in Scratch and Python Boolean Expressions Web development Cybersecurity HTML CSS …and more! The Big Fat Notebook series is built on a simple and irresistible conceit—borrowing the notes from the smartest kid in class. Each book in the series meets Common Core State Standards, Next Generation Science Standards, and state history standards, and are vetted by National and State Teacher of the Year Award–winning teachers. They make learning fun and are the perfect next step for every kid who grew up on Brain Quest.","industryIdentifiers":[{"type":"ISBN_13","identifier":"9781523502776"},{"type":"ISBN_10","identifier":"1523502770"}],"readingModes":{"text":false,"image":true},"pageCount":577,"printType":"BOOK","categories":["Juvenile Nonfiction"],"maturityRating":"NOT_MATURE","allowAnonLogging":false,"contentVersion":"0.0.1.0.preview.1","panelizationSummary":{"containsEpubBubbles":false,"containsImageBubbles":false},"imageLinks":{"smallThumbnail":"http://books.google.com/books/content?id=yfGoDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api","thumbnail":"http://books.google.com/books/content?id=yfGoDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"},"language":"en","previewLink":"http://books.google.com/books?id=yfGoDwAAQBAJ&printsec=frontcover&dq=computer+science&hl=&cd=1&source=gbs_api","infoLink":"http://books.google.com/books?id=yfGoDwAAQBAJ&dq=computer+science&hl=&source=gbs_api","canonicalVolumeLink":"https://books.google.com/books/about/Everything_You_Need_to_Ace_Computer_Scie.html?hl=&id=yfGoDwAAQBAJ"}
 /// saleInfo : {"country":"US","saleability":"NOT_FOR_SALE","isEbook":false}
-/// accessInfo : {"country":"US","viewability":"PARTIAL","embeddable":true,"publicDomain":false,"textToSpeechPermission":"ALLOWED","epub":{"isAvailable":true,"acsTokenLink":"http://books.google.com/books/download/Beginning_XNA_3_0_Game_Programming-sample-epub.acsm?id=9GwrmHRl490C&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"},"pdf":{"isAvailable":true,"acsTokenLink":"http://books.google.com/books/download/Beginning_XNA_3_0_Game_Programming-sample-pdf.acsm?id=9GwrmHRl490C&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"},"webReaderLink":"http://play.google.com/books/reader?id=9GwrmHRl490C&hl=&source=gbs_api","accessViewStatus":"SAMPLE","quoteSharingAllowed":false}
+/// accessInfo : {"country":"US","viewability":"PARTIAL","embeddable":true,"publicDomain":false,"textToSpeechPermission":"ALLOWED","epub":{"isAvailable":false},"pdf":{"isAvailable":true,"acsTokenLink":"http://books.google.com/books/download/Everything_You_Need_to_Ace_Computer_Scie-sample-pdf.acsm?id=yfGoDwAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"},"webReaderLink":"http://play.google.com/books/reader?id=yfGoDwAAQBAJ&hl=&source=gbs_api","accessViewStatus":"SAMPLE","quoteSharingAllowed":false}
+/// searchInfo : {"textSnippet":"Each book in the series meets Common Core State Standards, Next Generation Science Standards, and state history standards, and are vetted by National and State Teacher of the Year Award–winning teachers."}
 
-BooksModel booksModelFromJson(String str) => BooksModel.fromJson(json.decode(str));
-String booksModelToJson(BooksModel data) => json.encode(data.toJson());
-class BooksModel {
-  BooksModel({
+BookModelll bookModelllFromJson(String str) => BookModelll.fromJson(json.decode(str));
+String bookModelllToJson(BookModelll data) => json.encode(data.toJson());
+class BookModelll {
+  BookModelll({
       this.kind, 
       this.id, 
       this.etag, 
       this.selfLink, 
       this.volumeInfo, 
       this.saleInfo, 
-      this.accessInfo,});
+      this.accessInfo, 
+      this.searchInfo,});
 
-  BooksModel.fromJson(dynamic json) {
+  BookModelll.fromJson(dynamic json) {
     kind = json['kind'];
     id = json['id'];
     etag = json['etag'];
@@ -27,6 +29,7 @@ class BooksModel {
     volumeInfo = json['volumeInfo'] != null ? VolumeInfo.fromJson(json['volumeInfo']) : null;
     saleInfo = json['saleInfo'] != null ? SaleInfo.fromJson(json['saleInfo']) : null;
     accessInfo = json['accessInfo'] != null ? AccessInfo.fromJson(json['accessInfo']) : null;
+    searchInfo = json['searchInfo'] != null ? SearchInfo.fromJson(json['searchInfo']) : null;
   }
   String? kind;
   String? id;
@@ -35,6 +38,7 @@ class BooksModel {
   VolumeInfo? volumeInfo;
   SaleInfo? saleInfo;
   AccessInfo? accessInfo;
+  SearchInfo? searchInfo;
 
   Map<String, dynamic> toJson() {
     final map = <String, dynamic>{};
@@ -51,6 +55,30 @@ class BooksModel {
     if (accessInfo != null) {
       map['accessInfo'] = accessInfo?.toJson();
     }
+    if (searchInfo != null) {
+      map['searchInfo'] = searchInfo?.toJson();
+    }
+    return map;
+  }
+
+}
+
+/// textSnippet : "Each book in the series meets Common Core State Standards, Next Generation Science Standards, and state history standards, and are vetted by National and State Teacher of the Year Award–winning teachers."
+
+SearchInfo searchInfoFromJson(String str) => SearchInfo.fromJson(json.decode(str));
+String searchInfoToJson(SearchInfo data) => json.encode(data.toJson());
+class SearchInfo {
+  SearchInfo({
+      this.textSnippet,});
+
+  SearchInfo.fromJson(dynamic json) {
+    textSnippet = json['textSnippet'];
+  }
+  String? textSnippet;
+
+  Map<String, dynamic> toJson() {
+    final map = <String, dynamic>{};
+    map['textSnippet'] = textSnippet;
     return map;
   }
 
@@ -61,9 +89,9 @@ class BooksModel {
 /// embeddable : true
 /// publicDomain : false
 /// textToSpeechPermission : "ALLOWED"
-/// epub : {"isAvailable":true,"acsTokenLink":"http://books.google.com/books/download/Beginning_XNA_3_0_Game_Programming-sample-epub.acsm?id=9GwrmHRl490C&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"}
-/// pdf : {"isAvailable":true,"acsTokenLink":"http://books.google.com/books/download/Beginning_XNA_3_0_Game_Programming-sample-pdf.acsm?id=9GwrmHRl490C&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"}
-/// webReaderLink : "http://play.google.com/books/reader?id=9GwrmHRl490C&hl=&source=gbs_api"
+/// epub : {"isAvailable":false}
+/// pdf : {"isAvailable":true,"acsTokenLink":"http://books.google.com/books/download/Everything_You_Need_to_Ace_Computer_Scie-sample-pdf.acsm?id=yfGoDwAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"}
+/// webReaderLink : "http://play.google.com/books/reader?id=yfGoDwAAQBAJ&hl=&source=gbs_api"
 /// accessViewStatus : "SAMPLE"
 /// quoteSharingAllowed : false
 
@@ -127,7 +155,7 @@ class AccessInfo {
 }
 
 /// isAvailable : true
-/// acsTokenLink : "http://books.google.com/books/download/Beginning_XNA_3_0_Game_Programming-sample-pdf.acsm?id=9GwrmHRl490C&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+/// acsTokenLink : "http://books.google.com/books/download/Everything_You_Need_to_Ace_Computer_Scie-sample-pdf.acsm?id=yfGoDwAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
 
 Pdf pdfFromJson(String str) => Pdf.fromJson(json.decode(str));
 String pdfToJson(Pdf data) => json.encode(data.toJson());
@@ -152,27 +180,22 @@ class Pdf {
 
 }
 
-/// isAvailable : true
-/// acsTokenLink : "http://books.google.com/books/download/Beginning_XNA_3_0_Game_Programming-sample-epub.acsm?id=9GwrmHRl490C&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+/// isAvailable : false
 
 Epub epubFromJson(String str) => Epub.fromJson(json.decode(str));
 String epubToJson(Epub data) => json.encode(data.toJson());
 class Epub {
   Epub({
-      this.isAvailable, 
-      this.acsTokenLink,});
+      this.isAvailable,});
 
   Epub.fromJson(dynamic json) {
     isAvailable = json['isAvailable'];
-    acsTokenLink = json['acsTokenLink'];
   }
   bool? isAvailable;
-  String? acsTokenLink;
 
   Map<String, dynamic> toJson() {
     final map = <String, dynamic>{};
     map['isAvailable'] = isAvailable;
-    map['acsTokenLink'] = acsTokenLink;
     return map;
   }
 
@@ -209,26 +232,26 @@ class SaleInfo {
 
 }
 
-/// title : "Beginning XNA 3.0 Game Programming"
-/// subtitle : "From Novice to Professional"
-/// authors : ["Bruno Evangelista","Alexandre Santos Lobao","Riemer Grootjans","Jose ANTONIO LEAL DEFARIAS"]
-/// publisher : "Apress"
-/// publishedDate : "2009-05-31"
-/// description : "Would you like to create your own games, but never have the time to dig into the details of multimedia programming? Now you don't have to! XNA 3.0 makes it simple to create your own games, which will run on your PC and Xbox 360 console. Even if you don't know how to program at all, Beginning XNA 3.0 Game Programming: From Novice to Professional will teach you the basics of C# 2008 programming along the way. Don't get overwhelmed with details you don't need to know—just learn what you need to start creating your own games right now! This fast–paced introduction to XNA 3.0 and the C# language provides you with a quick–start guide to creating high–quality XNA games. You'll be introduced to the key concepts and ideas you need to know in a gradual fashion so that you master one concept before using it as a foundation for the next. Before long, you will have the skills to create smooth, professional–looking results in a range of gaming genres. By the end of the book, you will have constructed several working games and have an excellent knowledge base from which to investigate more advanced techniques."
-/// industryIdentifiers : [{"type":"ISBN_13","identifier":"9781430218180"},{"type":"ISBN_10","identifier":"1430218185"}]
-/// readingModes : {"text":true,"image":true}
-/// pageCount : 437
+/// title : "Everything You Need to Ace Computer Science and Coding in One Big Fat Notebook"
+/// subtitle : "The Complete Middle School Study Guide (Big Fat Notebooks)"
+/// authors : ["Workman Publishing"]
+/// publisher : "Workman Publishing Company"
+/// publishedDate : "2020-04-14"
+/// description : "From the editors of Brain Quest, America’s #1 educational bestseller! This Big Fat Notebook makes it all “sink in” with key concepts, mnemonic devices, definitions, diagrams, and doodles to help you understand computer science. Including: Computing systems Binary code Algorithms Computational thinking Loops, events, and procedures Programming in Scratch and Python Boolean Expressions Web development Cybersecurity HTML CSS …and more! The Big Fat Notebook series is built on a simple and irresistible conceit—borrowing the notes from the smartest kid in class. Each book in the series meets Common Core State Standards, Next Generation Science Standards, and state history standards, and are vetted by National and State Teacher of the Year Award–winning teachers. They make learning fun and are the perfect next step for every kid who grew up on Brain Quest."
+/// industryIdentifiers : [{"type":"ISBN_13","identifier":"9781523502776"},{"type":"ISBN_10","identifier":"1523502770"}]
+/// readingModes : {"text":false,"image":true}
+/// pageCount : 577
 /// printType : "BOOK"
-/// categories : ["Computers"]
+/// categories : ["Juvenile Nonfiction"]
 /// maturityRating : "NOT_MATURE"
 /// allowAnonLogging : false
-/// contentVersion : "2.4.3.0.preview.3"
+/// contentVersion : "0.0.1.0.preview.1"
 /// panelizationSummary : {"containsEpubBubbles":false,"containsImageBubbles":false}
-/// imageLinks : {"smallThumbnail":"http://books.google.com/books/content?id=9GwrmHRl490C&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api","thumbnail":"http://books.google.com/books/content?id=9GwrmHRl490C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"}
+/// imageLinks : {"smallThumbnail":"http://books.google.com/books/content?id=yfGoDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api","thumbnail":"http://books.google.com/books/content?id=yfGoDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"}
 /// language : "en"
-/// previewLink : "http://books.google.com/books?id=9GwrmHRl490C&printsec=frontcover&dq=subject:Programming&hl=&cd=1&source=gbs_api"
-/// infoLink : "http://books.google.com/books?id=9GwrmHRl490C&dq=subject:Programming&hl=&source=gbs_api"
-/// canonicalVolumeLink : "https://books.google.com/books/about/Beginning_XNA_3_0_Game_Programming.html?hl=&id=9GwrmHRl490C"
+/// previewLink : "http://books.google.com/books?id=yfGoDwAAQBAJ&printsec=frontcover&dq=computer+science&hl=&cd=1&source=gbs_api"
+/// infoLink : "http://books.google.com/books?id=yfGoDwAAQBAJ&dq=computer+science&hl=&source=gbs_api"
+/// canonicalVolumeLink : "https://books.google.com/books/about/Everything_You_Need_to_Ace_Computer_Scie.html?hl=&id=yfGoDwAAQBAJ"
 
 VolumeInfo volumeInfoFromJson(String str) => VolumeInfo.fromJson(json.decode(str));
 String volumeInfoToJson(VolumeInfo data) => json.encode(data.toJson());
@@ -338,8 +361,8 @@ class VolumeInfo {
 
 }
 
-/// smallThumbnail : "http://books.google.com/books/content?id=9GwrmHRl490C&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api"
-/// thumbnail : "http://books.google.com/books/content?id=9GwrmHRl490C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+/// smallThumbnail : "http://books.google.com/books/content?id=yfGoDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api"
+/// thumbnail : "http://books.google.com/books/content?id=yfGoDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
 
 ImageLinks imageLinksFromJson(String str) => ImageLinks.fromJson(json.decode(str));
 String imageLinksToJson(ImageLinks data) => json.encode(data.toJson());
@@ -390,7 +413,7 @@ class PanelizationSummary {
 
 }
 
-/// text : true
+/// text : false
 /// image : true
 
 ReadingModes readingModesFromJson(String str) => ReadingModes.fromJson(json.decode(str));
@@ -417,7 +440,7 @@ class ReadingModes {
 }
 
 /// type : "ISBN_13"
-/// identifier : "9781430218180"
+/// identifier : "9781523502776"
 
 IndustryIdentifiers industryIdentifiersFromJson(String str) => IndustryIdentifiers.fromJson(json.decode(str));
 String industryIdentifiersToJson(IndustryIdentifiers data) => json.encode(data.toJson());

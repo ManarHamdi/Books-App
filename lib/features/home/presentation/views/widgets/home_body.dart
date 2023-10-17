@@ -10,7 +10,7 @@ class HomeBody extends StatelessWidget{
     return Padding(
       padding: const EdgeInsets.only(left: 18),
       child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
+         crossAxisAlignment: CrossAxisAlignment.start,
         children: const [
           CustomAppBar(),
           BooksListView(),

@@ -22,7 +22,7 @@ class BestSellerListView extends StatelessWidget {
             return
               SizedBox(height: MediaQuery.of(context).size.height*.4,
                 child: ListView.separated(
-                  physics: const BouncingScrollPhysics(),
+                  physics: const ScrollPhysics(),
                     itemBuilder: (context, index) => InkWell(
                         onTap: (){
                           GoRouter.of(context).push(AppRoutes.kBookDetails);
@@ -30,6 +30,7 @@ class BestSellerListView extends StatelessWidget {
                         child:  BestSellerListViewItem(booksModel: state.books[index])),
                     separatorBuilder: (context, index) => const SizedBox(height: 5),
                     itemCount: state.books.length),
+
               );
           }
           else if (state is NewestBooksFailure){

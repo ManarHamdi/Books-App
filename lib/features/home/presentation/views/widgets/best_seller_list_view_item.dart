@@ -1,12 +1,12 @@
-import 'package:bookly_app/features/home/data/models/BooksModel.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import '../../../../../core/utils/styles.dart';
+import '../../../data/models/BookModelll.dart';
 import 'book_rating_row.dart';
 
 class BestSellerListViewItem extends StatelessWidget {
   const BestSellerListViewItem({Key? key, required this.booksModel}) : super(key: key);
-final BooksModel booksModel;
+final BookModelll booksModel;
   @override
   Widget build(BuildContext context) {
     return SizedBox(
@@ -20,7 +20,7 @@ final BooksModel booksModel;
             child: AspectRatio(
                 aspectRatio: 2/3,
                 child: CachedNetworkImage(
-                  imageUrl: booksModel.volumeInfo!.imageLinks!.thumbnail??"",
+                  imageUrl: booksModel.volumeInfo?.imageLinks?.thumbnail??"",
                   fit: BoxFit.fill,
                 )),
           ),
@@ -31,10 +31,10 @@ final BooksModel booksModel;
                SizedBox(
                   height: 48,
                   width: 195,
-                  child: Text(booksModel.volumeInfo!.title??"",
+                  child: Text(booksModel.volumeInfo?.title??" ",
 
                     style: Styles.textStyle20,maxLines: 2,overflow: TextOverflow.ellipsis,)),
-               Text(booksModel.volumeInfo!.authors?[0]??"",style: Styles.textStyle14,textAlign: TextAlign.start,),
+               Text(booksModel.volumeInfo?.authors?[0]??"",style: Styles.textStyle14,textAlign: TextAlign.start,),
               const SizedBox(height: 8,),
 
               Row(children: const [
