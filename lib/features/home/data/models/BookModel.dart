@@ -8,10 +8,10 @@ import 'dart:convert';
 /// accessInfo : {"country":"US","viewability":"PARTIAL","embeddable":true,"publicDomain":false,"textToSpeechPermission":"ALLOWED","epub":{"isAvailable":false},"pdf":{"isAvailable":true,"acsTokenLink":"http://books.google.com/books/download/Everything_You_Need_to_Ace_Computer_Scie-sample-pdf.acsm?id=yfGoDwAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"},"webReaderLink":"http://play.google.com/books/reader?id=yfGoDwAAQBAJ&hl=&source=gbs_api","accessViewStatus":"SAMPLE","quoteSharingAllowed":false}
 /// searchInfo : {"textSnippet":"Each book in the series meets Common Core State Standards, Next Generation Science Standards, and state history standards, and are vetted by National and State Teacher of the Year Award–winning teachers."}
 
-BookModelll bookModelllFromJson(String str) => BookModelll.fromJson(json.decode(str));
-String bookModelllToJson(BookModelll data) => json.encode(data.toJson());
-class BookModelll {
-  BookModelll({
+BookModel bookModelFromJson(String str) => BookModel.fromJson(json.decode(str));
+String bookModelToJson(BookModel data) => json.encode(data.toJson());
+class BookModel {
+  BookModel({
       this.kind, 
       this.id, 
       this.etag, 
@@ -21,7 +21,7 @@ class BookModelll {
       this.accessInfo, 
       this.searchInfo,});
 
-  BookModelll.fromJson(dynamic json) {
+  BookModel.fromJson(dynamic json) {
     kind = json['kind'];
     id = json['id'];
     etag = json['etag'];

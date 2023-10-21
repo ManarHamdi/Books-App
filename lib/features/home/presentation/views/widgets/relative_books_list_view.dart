@@ -1,21 +1,39 @@
 
+import 'package:bookly_app/features/home/data/models/BookModel.dart';
+import 'package:bookly_app/features/home/presentation/manager/similar_books_cubit/similar_books_cubit.dart';
+import 'package:bookly_app/features/home/presentation/manager/similar_books_cubit/similar_books_states.dart';
+import 'package:bookly_app/features/home/presentation/views/widgets/custom_error_widget.dart';
+import 'package:bookly_app/features/home/presentation/views/widgets/custom_loading_indicator.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 
 import 'books_list_view_item.dart';
 
 class RelativeBooksListView extends StatelessWidget {
-  const RelativeBooksListView({Key? key}) : super(key: key);
+  const RelativeBooksListView({Key? key, required this.bookModel}) : super(key: key);
+ final BookModel bookModel;
   @override
   Widget build(BuildContext context) {
-    return       SizedBox(
-      height: 124,
-      child: ListView.separated(
-          scrollDirection: Axis.horizontal,
-          itemBuilder: (context, index) =>  const BooksListViewItem(
-            imageUrl: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fblogs.icrc.org%2Falinsani%2F2020%2F08%2F23%2F3923%2F&psig=AOvVaw1zYPjWEuUvHJ2bLPeqcHi3&ust=1697493864225000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCPDu0ciH-YEDFQAAAAAdAAAAABAE",
-          ),
-          separatorBuilder: ((context, index) => const SizedBox(width: 5,)),
-          itemCount: 10),
+    return       BlocBuilder<SimilarBooksCubit,SimilarBooksStates>(
+builder: (context, state) {
+  if (state is SimilarBooksSuccess){
+       return SizedBox(
+        height: 124,
+        child: ListView.separated(
+            scrollDirection: Axis.horizontal,
+            itemBuilder: (context, index) =>   BooksListViewItem(
+              imageUrl:state.books[index].volumeInfo!.imageLinks?.thumbnail?? "https://miro.medium.com/v2/resize:fit:5120/1*42ebJizcUtZBNIZPmmMZ5Q.jpeg",
+            ),
+            separatorBuilder: ((context, index) => const SizedBox(width: 5,)),
+            itemCount: 10),
+      );}
+  else if (state is SimilarBooksFailure){
+    return CustomErrorWidget(errMessage: state.errMessage);
+  }
+  else {
+    return const CustomLoadingIndicator();
+  }
+}
     );
 
   }

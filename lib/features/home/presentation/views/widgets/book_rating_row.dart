@@ -1,8 +1,5 @@
-import 'package:bookly_app/features/home/data/models/BookModelll.dart';
 import 'package:flutter/cupertino.dart';
-
 import '../../../../../core/utils/styles.dart';
-
 class BookRatingRow extends StatelessWidget {
   const BookRatingRow({Key? key}) : super(key: key);
   @override

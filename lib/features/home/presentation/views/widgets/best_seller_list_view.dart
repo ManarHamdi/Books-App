@@ -4,8 +4,6 @@ import 'package:bookly_app/features/home/presentation/views/widgets/custom_error
 import 'package:bookly_app/features/home/presentation/views/widgets/custom_loading_indicator.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:go_router/go_router.dart';
-import '../../../../../core/utils/routes.dart';
 import 'best_seller_list_view_item.dart';
 
 class BestSellerListView extends StatelessWidget {
@@ -23,11 +21,7 @@ class BestSellerListView extends StatelessWidget {
               SizedBox(height: MediaQuery.of(context).size.height*.4,
                 child: ListView.separated(
                   physics: const ScrollPhysics(),
-                    itemBuilder: (context, index) => InkWell(
-                        onTap: (){
-                          GoRouter.of(context).push(AppRoutes.kBookDetails);
-                        },
-                        child:  BestSellerListViewItem(booksModel: state.books[index])),
+                    itemBuilder: (context, index) => BestSellerListViewItem(booksModel: state.books[index]),
                     separatorBuilder: (context, index) => const SizedBox(height: 5),
                     itemCount: state.books.length),
 

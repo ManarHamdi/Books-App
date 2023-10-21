@@ -1,13 +1,12 @@
-
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 
 
 class BooksListViewItem extends StatelessWidget {
   final String imageUrl;
-  const BooksListViewItem({Key? key, required this.imageUrl}) : super(key: key);
+  const BooksListViewItem({Key? key, required this.imageUrl,  }) : super(key: key);
 
-  @override
+@override
   Widget build(BuildContext context) {
     return ClipRRect(
       borderRadius: const BorderRadius.all(Radius.circular(10)),
