@@ -1,18 +1,38 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 
-class CustomSearchTextField extends StatelessWidget {
+import '../../manager/search_cubit/search_cubit.dart';
+
+class CustomSearchTextField extends StatefulWidget {
   const CustomSearchTextField({Key? key}) : super(key: key);
 
   @override
-  Widget build(BuildContext context) {
-    return const TextField(
-      decoration: InputDecoration(
-          hintText: "Search",
-          suffixIcon: Opacity(opacity: .3,child: Icon(Icons.search_rounded)),
-          enabledBorder: OutlineInputBorder(borderSide: BorderSide(color: Colors.white,
-          ))),
-      enabled: true,
+  State<CustomSearchTextField> createState() => _CustomSearchTextFieldState();
+}
 
-    );
+class _CustomSearchTextFieldState extends State<CustomSearchTextField> {
+
+  void initState() {
+
+    // BlocProvider.of<SearchBooksCubit>(context).fetchResultMethod(keyword:keyword );
+    super.initState();
+  }
+  @override
+  Widget build(BuildContext context) {
+    return TextField(
+
+        decoration: const InputDecoration(
+            hintText: "Search",
+            suffixIcon: Opacity(opacity: .3, child: Icon(Icons.search_rounded)),
+            enabledBorder: OutlineInputBorder(
+                borderSide: BorderSide(color: Colors.white,
+                ))),
+        enabled: true,
+        onSubmitted: (value) {
+          setState(() {
+             keyword = value;
+          });
+        });
   }
 }
+String keyword="math";

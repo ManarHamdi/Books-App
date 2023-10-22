@@ -1,7 +1,9 @@
+import 'package:bookly_app/core/utils/functions/launch_url.dart';
 import 'package:bookly_app/core/utils/styles.dart';
 import 'package:bookly_app/features/home/data/models/BookModel.dart';
 import 'package:bookly_app/features/home/presentation/views/widgets/relative_books_list_view.dart';
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
 import 'book_rating_row.dart';
 import 'books_list_view_item.dart';
 import 'custom_book_details_app_bar.dart';
@@ -45,7 +47,11 @@ class BookDetailsBody extends StatelessWidget {
                 SizedBox(
                   height: 48,
                   width: MediaQuery.of(context).size.width*.4,
-                  child: CustomButton(backGround: const Color(0xffEF8262),buttonTitle: "Preview",
+                  child: CustomButton(
+                    onPressed: () async {
+                    customLuanchUrl(context, bookModel.volumeInfo!.previewLink);
+                    },
+                    backGround: const Color(0xffEF8262),buttonTitle: "Preview",
                     textColor: Colors.white,borderStyle: MaterialStateProperty.all(const RoundedRectangleBorder(borderRadius: BorderRadius.only(topRight: Radius.circular(8),bottomRight: Radius.circular(8)))),),
                 ),
                 const SizedBox(height: 50,),
