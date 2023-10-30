@@ -7,7 +7,6 @@ import 'package:bookly_app/features/search/data/search_repos/search_repo_impl.da
 import 'package:bookly_app/features/search/presentation/manager/search_cubit/search_cubit.dart';
 import 'package:bookly_app/features/search/presentation/manager/search_cubit/search_states.dart';
 import 'package:bookly_app/features/search/presentation/views/search_view.dart';
-import 'package:bookly_app/features/search/presentation/views/widgets/custom_search_texr_field.dart';
 import 'package:bookly_app/features/splash/splash_view.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -47,7 +46,8 @@ abstract class AppRoutes{
         builder: (BuildContext context, GoRouterState state) {
           return BlocProvider(
               create: (context) => SearchBooksCubit(SearchBooksInitialState(), getIt.get<SearchRepoImpl>()),
-              child:  SearchView(keyword:keyword));
+              child:  SearchView()
+          );
         },
       ),
 

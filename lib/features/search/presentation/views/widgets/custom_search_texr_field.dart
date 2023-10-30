@@ -1,3 +1,4 @@
+
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -12,11 +13,6 @@ class CustomSearchTextField extends StatefulWidget {
 
 class _CustomSearchTextFieldState extends State<CustomSearchTextField> {
 
-  void initState() {
-
-    // BlocProvider.of<SearchBooksCubit>(context).fetchResultMethod(keyword:keyword );
-    super.initState();
-  }
   @override
   Widget build(BuildContext context) {
     return TextField(
@@ -28,11 +24,18 @@ class _CustomSearchTextFieldState extends State<CustomSearchTextField> {
                 borderSide: BorderSide(color: Colors.white,
                 ))),
         enabled: true,
-        onSubmitted: (value) {
+        // onSubmitted: (value) {
+        //   setState(() {
+        //      keyword = value;
+        //   });
+        // }
+      onChanged: (value){
           setState(() {
-             keyword = value;
+            BlocProvider.of<SearchBooksCubit>(context).keyWord=value;
+            BlocProvider.of<SearchBooksCubit>(context).fetchResultMethod(keyword: value);
           });
-        });
+      },
+
+        );
   }
 }
-String keyword="math";

@@ -16,7 +16,8 @@ final BookModel booksModel;
         GoRouter.of(context).push(AppRoutes.kBookDetails,extra: booksModel);
       },
       child: SizedBox(
-        height: 125,
+        height: 100,
+
         child: Row(
           children: [
 

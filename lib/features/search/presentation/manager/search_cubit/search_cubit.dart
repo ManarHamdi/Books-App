@@ -6,9 +6,10 @@ import '../../../data/search_repos/search_repo.dart';
 class SearchBooksCubit extends Cubit<SearchBooksStates>{
   final SearchRepos homeRepo;
   SearchBooksCubit(super.initialState, this.homeRepo);
+  String keyWord="";
   Future<void> fetchResultMethod({required String keyword})async {
     emit(SearchBooksLoadingState());
-    var result=await homeRepo.fetchResultMethod(keyword: keyword);
+    var result=await homeRepo.fetchResultMethod(keyword: keyWord);
     result.fold( (failure) {
       emit(SearchBooksFailureState(failure.errorMess));
     }
